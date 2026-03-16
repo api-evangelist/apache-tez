@@ -1,0 +1,35 @@
+aid: apache-tez
+name: Apache Tez
+description: >-
+  Apache Tez is an application framework that allows for a complex directed-acyclic-graph of tasks for processing data. It is built on top of Apache Hadoop YARN and is used as the execution engine for Apache Hive and Apache Pig.
+type: Index
+position: Consumer
+access: 3rd-Party
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - DAG
+  - Execution Engine
+  - Hadoop
+  - Big Data
+  - YARN
+created: '2026-03-16'
+modified: '2026-03-16'
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/apache-tez/refs/heads/main/apis.yml
+specificationVersion: '0.19'
+apis:
+  - aid: apache-tez:apache-tez
+    name: Apache Tez
+    description: >-
+      Tez provides a Java API for defining complex DAGs of data processing tasks, with vertex, edge, and data source/sink APIs for building execution plans that run on YARN, used as the execution engine for Hive and Pig.
+    humanURL: https://tez.apache.org/releases/apache-tez-0-10-3.html
+    tags:
+      - Java
+      - DAG
+      - YARN
+    properties:
+      - type: Documentation
+        url: https://tez.apache.org/releases/apache-tez-0-10-3.html
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
