@@ -7,10 +7,10 @@ position: Consumer
 access: 3rd-Party
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
+  - Big Data
   - DAG
   - Execution Engine
   - Hadoop
-  - Big Data
   - YARN
 created: '2026-03-16'
 modified: '2026-03-16'
@@ -24,8 +24,8 @@ apis:
       Tez provides a Java API for defining complex DAGs of data processing tasks, with vertex, edge, and data source/sink APIs for building execution plans that run on YARN, used as the execution engine for Hive and Pig.
     humanURL: https://tez.apache.org/releases/apache-tez-0-10-3.html
     tags:
-      - Java
       - DAG
+      - Java
       - YARN
     properties:
       - type: Documentation
