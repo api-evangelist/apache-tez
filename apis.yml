@@ -42,7 +42,7 @@ apis:
         url: https://tez.apache.org/developer-docs.html
       - type: APIReference
         url: https://tez.apache.org/javadocs/
-      - type: SDK
+      - type: SDKs
         url: https://search.maven.org/search?q=org.apache.tez
         title: Maven Java SDK
   - aid: apache-tez:apache-tez-ui-rest-api
