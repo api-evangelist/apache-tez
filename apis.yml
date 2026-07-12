@@ -62,6 +62,10 @@ apis:
       - type: Documentation
         url: https://tez.apache.org/tez-ui.html
 common:
+  - type: VulnerabilityDisclosure
+    url: security/apache-tez-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/apache-tez-domain-security.yml
   - type: GitHubRepository
     url: https://github.com/apache/tez
   - type: Documentation
