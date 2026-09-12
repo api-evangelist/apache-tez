@@ -94,6 +94,8 @@ apis:
       - type: Documentation
         url: https://tez.apache.org/tez-ui.html
 common:
+  - type: Website
+    url: https://www.apache.org/
   - type: CodeOfConduct
     url: https://github.com/apache/.github/blob/main/.github/CODE_OF_CONDUCT.md
   - type: License
