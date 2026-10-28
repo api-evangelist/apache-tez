@@ -1,4 +1,4 @@
-# Apache Tez (apache-tez)
+# Apache Tez
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,88 +64,105 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Apache Tez is an application framework for complex directed-acyclic-graph (DAG) based processing of data built on Apache Hadoop YARN. It is the default execution engine for Apache Hive providing in-memory data passing, session reuse, and dynamic DAG optimization.
+Apache Tez is an application framework that allows for complex directed-acyclic-graph (DAG) based processing of data built on Apache Hadoop YARN. It is designed as a successor to MapReduce for executing Hive and Pig queries, providing a flexible API for creating DAG execution pipelines, in-memory data passing between tasks, and session reuse for reduced startup latency. Apache Tez is an Apache Software Foundation top-level project.
 
-**URL:** [https://tez.apache.org/](https://tez.apache.org/)
+**Areas:** Big Data · DAG · Execution Engine · Hadoop · YARN · Open Source
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Apache Tez on APIs.io
 
-## Tags:
+Everything profiled for Apache Tez is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/apache-tez/](https://apis.io/providers/apache-tez/)** — or go straight to one of the APIs or properties below.
 
- - Big Data, DAG, Execution Engine, Hadoop, YARN, Open Source
+### APIs (2)
 
-## Timestamps
+- [Apache Tez DAG API](https://apis.io/apis/apache-tez/apache-tez-dag-api/) — The Tez DAG API provides a Java programming model for defining and submitting directed-acyclic-graph (DAG) computation jobs to Apache YARN. It allows…
+- [Apache Tez UI REST API](https://apis.io/apis/apache-tez/apache-tez-ui-rest-api/) — The Tez UI and YARN Application History Server expose REST endpoints for monitoring Tez application history, DAG details, vertex and task statistics. The…
 
-- **Created:** 2026-03-16
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Apache Tez DAG API
-Java programming model for defining and submitting DAG computation jobs to Apache YARN with Vertex, Edge, and Processor implementations.
+#### Security (2)
 
-**Human URL:** [https://tez.apache.org/developer-docs.html](https://tez.apache.org/developer-docs.html)
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags:
+- [Apache Tez Domain Security](https://apis.io/security/apache-tez/apache-tez-domain-security/)
+- [Apache Tez Vulnerability Disclosure](https://apis.io/security/apache-tez/apache-tez-vulnerability-disclosure/)
 
- - Java, DAG, YARN, Hadoop
+#### Plans and pricing (1)
 
-#### Properties
+Published plans, tiers and prices.
 
-- [Documentation](https://tez.apache.org/developer-docs.html)
-- [APIReference](https://tez.apache.org/javadocs/)
-- [Maven Java SDK](https://search.maven.org/search?q=org.apache.tez)
+- [Apache Tez Plans Pricing](https://apis.io/plans/apache-tez/apache-tez-plans-pricing/)
 
-### Apache Tez UI REST API
-REST endpoints for monitoring Tez application history, DAG details, vertex and task statistics via the YARN Application History Server.
+#### Rate limits (1)
 
-**Human URL:** [https://tez.apache.org/tez-ui.html](https://tez.apache.org/tez-ui.html)
+Published request limits.
 
-#### Tags:
+- [Apache Tez Rate Limits](https://apis.io/rate-limits/apache-tez/apache-tez-rate-limits/)
 
- - REST, Monitoring, YARN, History
+#### FinOps (1)
 
-#### Properties
+What the API costs to run, by operation.
 
-- [Documentation](https://tez.apache.org/tez-ui.html)
+- [Apache Tez Finops](https://apis.io/finops/apache-tez/apache-tez-finops/)
 
-## Common Properties
+## Where to find this API
 
-- [GitHubRepository](https://github.com/apache/tez)
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.apache.org/)
 - [Documentation](https://tez.apache.org/)
-- [Portal](https://tez.apache.org/)
-- [ReleaseNotes](https://github.com/apache/tez/releases)
-- [TermsOfService](https://www.apache.org/licenses/)
+- [Terms of service](https://www.apache.org/licenses/)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| DAG-Based Execution | Flexible DAG computation model replacing MapReduce for complex multi-stage pipelines. |
-| In-Memory Data Passing | Direct in-memory data transfer between vertices eliminating HDFS I/O. |
-| Session Reuse | Tez sessions reuse container allocations across DAG submissions for reduced latency. |
-| Dynamic Optimization | Runtime DAG modification based on actual data statistics during execution. |
-| YARN Integration | Native YARN resource management with fine-grained resource requests per vertex. |
+**Kin Score 18.5** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 28.9 |
+| Developer ergonomics | 26.2 |
+| Access clarity | 18.4 |
 
-| Name | Description |
-|------|-------------|
-| Apache Hive Query Execution | Tez is the default execution engine for Apache Hive queries. |
-| Apache Pig Script Execution | Execute Apache Pig Latin scripts as optimized Tez DAGs. |
-| Complex ETL Pipelines | Multi-stage data transformation pipelines with in-memory data passing. |
+**Agent readiness 0.6** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| Apache Hadoop YARN | Native YARN resource manager integration for cluster resource allocation. |
-| Apache Hive | Default execution engine for Hive queries in HDP and CDH distributions. |
-| Apache Pig | Tez execution backend for Apache Pig script compilation and execution. |
-| Apache HDFS | Input/output storage for Tez job data via Hadoop Distributed File System. |
+**Regulatory alignment 15.7** — Horizontal (data, software, accessibility, platform)
 
-## Maintainers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/apache-tez/](https://apis.io/providers/apache-tez/).
 
-**FN:** Kin Lane
+## How this profile is made
 
-**Email:** info@apievangelist.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Apache Tez: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/apache-tez/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
